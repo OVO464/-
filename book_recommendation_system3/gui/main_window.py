@@ -344,7 +344,7 @@ class MainWindow:
 
     def _get_deepseek_response(self, user_message):
         try:
-            client = OpenAI(api_key="sk-23bf8c7fdcf14667803aaacf2b7df59d", base_url="https://api.deepseek.com")
+            client = OpenAI(api_key="***", base_url="https://api.deepseek.com")//使用自己申请的api
             messages = [
                 {"role": "system", "content": "You are a helpful assistant"},
                 {"role": "user", "content": user_message},
